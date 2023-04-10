@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@myorg/search": "workspace:*",
     "@myorg/playlist": "workspace:*",
+    "@myorg/search": "workspace:*",
+    "@originjs/vite-plugin-federation": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

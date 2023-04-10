@@ -22,6 +22,9 @@ importers:
       '@myorg/search':
         specifier: workspace:*
         version: link:../search
+      '@originjs/vite-plugin-federation':
+        specifier: ^1.2.1
+        version: 1.2.1
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -59,6 +62,9 @@ importers:
       '@myorg/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@originjs/vite-plugin-federation':
+        specifier: ^1.2.1
+        version: 1.2.1
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -102,6 +108,9 @@ importers:
       '@myorg/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@originjs/vite-plugin-federation':
+        specifier: ^1.2.1
+        version: 1.2.1
       react:
         specifier: ^18.2.0
         version: 18.2.0
