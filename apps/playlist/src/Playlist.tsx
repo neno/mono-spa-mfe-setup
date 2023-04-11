@@ -1,5 +1,11 @@
 import { useStore } from '@myorg/store';
-import { ImageCard, Gallery, PrimaryButton, IconTrash } from '@myorg/ui';
+import {
+  ImageCard,
+  Gallery,
+  PrimaryButton,
+  IconTrash,
+  ListItem
+} from '@myorg/ui';
 
 export function Playlist() {
   const { movies, deleteMovie } = useStore();
@@ -7,15 +13,25 @@ export function Playlist() {
     <div className="App">
       <h1>Playlist App</h1>
       {movies.length > 0 && (
-        <Gallery>
+        <ul>
           {movies.map((movie: any) => (
-            <ImageCard key={movie.id} {...movie}>
+            <ListItem
+              key={movie.id}
+              img={movie.poster_path}
+              title={movie.title}
+              text={movie.overview}
+            >
               <PrimaryButton onClick={() => deleteMovie(movie)}>
                 <IconTrash />
               </PrimaryButton>
-            </ImageCard>
+            </ListItem>
+            // <ImageCard key={movie.id} {...movie}>
+            //   <PrimaryButton onClick={() => deleteMovie(movie)}>
+            //     <IconTrash />
+            //   </PrimaryButton>
+            // </ImageCard>
           ))}
-        </Gallery>
+        </ul>
       )}
     </div>
   );

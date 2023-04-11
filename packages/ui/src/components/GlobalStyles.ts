@@ -10,4 +10,10 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     font-weight: 400;
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 `
